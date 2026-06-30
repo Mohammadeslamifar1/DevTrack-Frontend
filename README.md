@@ -1,16 +1,152 @@
-# React + Vite
+# DevTrack – Full‑Stack Project Management SaaS
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+DevTrack is a full‑stack project management application built with **Django REST Framework** (backend) and **React + Vite + Tailwind + ShadCN** (frontend).  
+It demonstrates real-world engineering skills including authentication, CRUD operations, relational data modeling, dashboards, analytics, and modern UI/UX patterns.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+### 🔐 Authentication
+- JWT login
+- Protected routes
+- Auto‑logout on expired tokens
+- Global Axios interceptors
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 📁 Projects Module
+- Create, edit, delete projects
+- Empty states, loading states, error states
+- Clean ShadCN dialog forms
 
-## Expanding the Oxlint configuration
+### 📝 Tasks Module
+- Full CRUD
+- Tasks linked to projects (relational)
+- Status + priority + due date
+- Project-based filtering
+- Status filtering
+- Professional UX with ShadCN components
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### 📊 Dashboard Analytics
+- Total projects
+- Total tasks
+- Tasks by status (todo / in progress / done)
+- Clean dashboard cards
+
+### 🎨 Modern Frontend Stack
+- React + Vite
+- Tailwind CSS v4
+- ShadCN UI (Radix + Nova)
+- React Router v6
+- Axios with JWT interceptors
+
+### 🛠 Backend Stack
+- Django
+- Django REST Framework
+- JWT Authentication
+- DRF Routers
+- Relational models (Projects → Tasks)
+- Analytics endpoint
+
+---
+
+## 📸 Screenshots
+
+### Login
+![Login](screenshots/login.png)
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Projects
+![Projects](screenshots/projects.png)
+
+### Tasks
+![Tasks](screenshots/tasks.png)
+
+## 🧱 Project Structure
+
+### Frontend (React)
+
+src/
+├── api/axios.js
+├── components/
+├── context/AuthContext.jsx
+├── pages/
+├── router/
+├── main.jsx
+└── index.css
+
+
+### Backend (Django)
+
+devtrack/
+├── projects/
+├── tasks/
+├── accounts/
+├── devtrack/
+└── manage.py
+
+## 🔧 Installation
+
+### Backend
+```bash
+cd devtrack-backend
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+
+### Frontend
+
+cd devtrack-frontend
+npm install
+npm run dev
+
+---
+
+## 🔗 API Endpoints
+
+### Auth
+POST /api/token/
+
+### Projects
+
+GET    /api/projects/
+POST   /api/projects/
+PUT    /api/projects/:id/
+DELETE /api/projects/:id/
+
+
+### Tasks
+GET    /api/tasks/?project=<id>&status=<status>
+POST   /api/tasks/
+PUT    /api/tasks/:id/
+DELETE /api/tasks/:id/
+
+
+### Dashboard Analytics
+GET /api/dashboard-stats/
+
+## 🧑‍💻 Author
+
+**Mohammad Eslamifar**  
+Full‑Stack Developer  
+Rome, Italy
+
+## ⭐ Why This Project Matters
+
+DevTrack is designed to showcase **real full‑stack engineering skills**:
+
+- Authentication  
+- Protected routes  
+- Relational database modeling  
+- REST API design  
+- Modern frontend architecture  
+- State management  
+- UX patterns  
+- Dashboard analytics  
+- Error handling  
+- Loading states  
+- Production‑grade structure  
+
+⭐ If you like this project, consider starring the repo!
+

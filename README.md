@@ -49,6 +49,19 @@ It demonstrates real-world engineering skills including authentication, CRUD ope
 
 ---
 
+## Running the full stack locally
+
+1. Start the backend
+```powershell
+cd backend
+.\env\Scripts\Activate.ps1
+python manage.py runserver
+
+cd frontend
+npm install
+npm run dev
+
+
 ## 📸 Screenshots
 
 ### Login
@@ -129,6 +142,19 @@ DELETE /api/tasks/:id/
 
 ### Dashboard Analytics
 GET /api/dashboard-stats/
+
+## Frontend — Quick start (Vite / React)
+
+**Prerequisites**
+- Node 18+ and npm or pnpm
+- Backend running at `http://127.0.0.1:8000` (see backend README)
+
+**Install and run**
+```bash
+cd /path/to/frontend
+npm install
+npm run dev
+# open http://localhost:5173
 
 ## 🧑‍💻 Author
 

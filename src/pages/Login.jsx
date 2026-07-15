@@ -13,14 +13,15 @@ export default function Login() {
     e.preventDefault();
 
     try {
-      const response = await api.post("token/", {
-        username,
-        password,
+      const response = await api.post("/token/", {
+        username: username.trim(),
+        password: password.trim(),
       });
 
       localStorage.setItem("access", response.data.access);
       navigate("/dashboard");
     } catch (error) {
+      console.log(error);
       alert("Invalid credentials");
     }
   }
@@ -34,12 +35,16 @@ export default function Login() {
         <h1 className="text-2xl font-bold text-center">DevTrack Login</h1>
 
         <Input
+          name="username"
+          autoComplete="username"
           placeholder="Username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         />
 
         <Input
+          name="password"
+          autoComplete="current-password"
           placeholder="Password"
           type="password"
           value={password}

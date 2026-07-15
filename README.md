@@ -60,15 +60,13 @@ python manage.py runserver
 cd frontend
 npm install
 npm run dev
-
+```
 
 ## 📸 Screenshots
 
 ### Login
 ![Login](screenshots/login.png)
-### Login
 ![Username view](screenshots/image_2026-06-30_17-18-46.png)
-### Login
 ![Password view](screenshots/image_2026-06-30_17-19-03.png)
 
 ### Dashboard

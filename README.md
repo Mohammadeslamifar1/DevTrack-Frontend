@@ -53,15 +53,19 @@ It demonstrates real-world engineering skills including authentication, CRUD ope
 
 ### Login
 ![Login](screenshots/login.png)
+![Username view](screenshots/image_2026-06-30_17-18-46.png)
+![Password view](screenshots/image_2026-06-30_17-19-03.png)
 
 ### Dashboard
 ![Dashboard](screenshots/dashboard.png)
 
-### Projects
-![Projects](screenshots/projects.png)
+### Projects & Tasks
+![Projects](screenshots/Projects-Tasks.png)
 
-### Tasks
-![Tasks](screenshots/tasks.png)
+### Traces
+![Traces](screenshots/Trace.png)
+![LoginTrace](screenshots/LoginTrace.png)
+![TokenTrace](screenshots/TokenTrace.png)
 
 ## 🧱 Project Structure
 
